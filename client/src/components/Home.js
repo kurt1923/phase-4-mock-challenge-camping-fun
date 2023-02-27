@@ -21,7 +21,7 @@ function Home() {
   function handleAddCamper(newCamper) {
     setCampers((campers) => [...campers, newCamper]);
   }
-
+console.log("campers", campers)
   function handleDeleteActivity(id) {
     fetch(`/activities/${id}`, {
       method: "DELETE",
